@@ -1,38 +1,79 @@
-.App {
+*{
+  margin: 0pc;
+  padding: 0px;
+}.de-active{
+  cursor: not-allowed;
+  background-color: gray
+}
+.active{
+  cursor: pointer;
+  background-color: coral;
+}
+.seat {
+  height: 40px;
+  width:40px;
+  border :1px solid black;
+  margin: 2px 14px;
+  border-radius: 4px;
+ 
+}
+td{
+  display: inline-block;
+  margin: 8px 0px;
+}
+td div:nth-child(2){
   text-align: center;
+  font-weight: 600;
+  color:white
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.avilable{
+  background-color: rgb(106, 231, 106);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.occupied{
+  background-color: coral;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-wrapper{
+  border: 2px solid red;
+  background-color: black;
+  width:900px;
+  margin:30px auto;
+  padding: 30px;
+  border-radius: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+h1{
+  color: lightcoral;
+  margin-bottom: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input{
+  
+  border:2px solid lightcoral;
+  border-radius: 4px;
+  
+}
+.input input{
+  width: 500px;
+  height:30px;
+  outline:none;
+  border: none;
+  margin-left: 5px;
+  background-color: black;
+  color:coral
+  
+}
+.input input::placeholder{
+  color: lightcoral
+}
+.input span{
+  margin: 5px;
+  
+  display: inline-block;
+  height:30px;
+ 
+  border-radius: 14px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 2px 8px;
 }
